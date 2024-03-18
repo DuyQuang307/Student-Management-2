@@ -1,0 +1,148 @@
+
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.input-container {
+  display: flex; /* Bố cục flexbox */
+  justify-content: center; /* Căn chỉnh các phần tử vào giữa */
+  align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa các phần tử */
+  margin-bottom: 20px;
+}
+
+/* Styling for table */
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: 200px; /* Cố định chiều rộng cột */
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #192f5d;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* CSS for modal */
+.modal {
+  display: block; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Styling for buttons */
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #c86417;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #a06b37;
+}
+
+.container {
+  display: flex; /* Sử dụng Flexbox */
+  padding: 0 50px; /* Thêm lề bên trái và bên phải 20px */
+  width: 100%;
+}
+/* Thêm vào file CSS của bạn */
+.form-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  margin-right: 10px;
+  width: 150px; /* Điều chỉnh chiều rộng của nhãn */
+}
+
+.form-group input {
+  flex: 1; /* Cho phép input chiếm hết không gian còn lại */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.container.vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Căn các mục ở đầu trang */
+}
